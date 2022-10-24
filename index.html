@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Alguns imports-->
+    <link rel="icon" href="./assets/img/icon.svg">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://kit.fontawesome.com/97149384aa.js" crossorigin="anonymous"></script>
+    <script src="./assets/script/script.js"></script>
+
+    <title>Guilherme Veloso</title>
+</head>
+
+<body>
+
+    <header class="header-main">
+        <div class="header-main__content max-width">
+
+            <div>
+                <h1>Guilherme Veloso</h1>
+                <figure><img src="./assets/img/perfil_header.jpg" alt="Imagem de perfil"></figure>
+            </div>
+
+            <nav class="header-main--nav">
+                <ul>
+                    <li>
+                        <a href="#inicio">Início</a>
+                    </li>
+
+                    <li>
+                        <a href="#tecnologia">Tecnologias</a>
+                    </li>
+
+                    <li>
+                        <a href="#projetos">Projetos</a>
+                    </li>
+
+                    <li>
+                        <a href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button onclick="showMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+    </header>
+
+    <div class="header-main--nav-mobile">
+        <ul>
+            <li>
+                <a href="#inicio">Início</a>
+            </li>
+
+            <li>
+                <a href="#tecnologia">Tecnologias</a>
+            </li>
+
+            <li>
+                <a href="#projetos">Projetos</a>
+            </li>
+
+            <li>
+                <a href="#contato">Contato</a>
+            </li>
+        </ul>
+    </div>
+
+    <section class="section__perfil max-width" id="inicio">
+
+        <div class="perfil-img">
+            <img src="./assets/img/perfil.png" alt="">
+        </div>
+
+        <div class="perfil-text">
+            <div class="perfil-text-title">
+                <h2>Olá</h2>
+            </div>
+            <div class="perfil-text-content">
+                <p>Me chamo <span>Guilherme Veloso,</span> tenho 25 anos, carioca, formado como técnico de informática
+                    pelo CIEMS(Centro Interescolar Estadual Miécimo da Silva). Cursei Análise e Desenvolvimento de
+                    Sistemas.
+                </p>
+
+                <p>Meu primeiro contato com programação no ensino médio, integrado com técnico, porém foi só a partir de
+                    2020 que decidi aprofundar meus conhecimentos em programação.</p>
+
+                <p>Tenho o objetivo de me tornar um grande profissional full stack, e pensando nisso criei esse
+                    portifólio para poder demonstrar minhas habilidades através dos meus projetos.</p>
+            </div>
+
+            <div class="perfil-links">
+                <a href="./assets/docs/Guilherme Veloso.pdf" target="_blank"><button
+                        class="link-curriculo">Currículo</button></a>
+                <a href="https://github.com/guigvd" target="_blank"><button class="link-github">GitHub</button></a>
+                <a href="https://www.linkedin.com/in/guigvd/" target="_blank"><button
+                        class="link-linkedin">Linkedin</button></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section__tecnologia max-width" id="tecnologia">
+        <h2>Tecnologias</h2>
+
+        <div class="tecnologia__content">
+
+            <div class="tecnologia__content--block">
+                <figure>
+                    <img src="./assets/img/technology/tec_html.png" alt="HTML ico">
+                    <figcaption>Html</figcaption>
+                </figure>
+                <div></div>
+                <p>Estudo e pratico HTML, essa tecnologia está presente na maioria dos meus projetos.</p>
+            </div>
+
+            <div class="tecnologia__content--block">
+                <figure>
+                    <img src="./assets/img/technology/tec_css.png" alt="CSS icon">
+                    <figcaption>CSS</figcaption>
+                </figure>
+                <p>Igual ao html, o css também está na maioria dos meus projetos, fazendo uso de seletores, Flexbox,
+                    responsividade entre outros. </p>
+            </div>
+
+            <div class="tecnologia__content--block">
+                <figure>
+                    <img src="./assets/img/technology/tec_js.png" alt="JavaScript icon">
+                    <figcaption>JavaScript</figcaption>
+                </figure>
+                <p>Estudo e venho praticado JavaScript e suas funcionalidades como: fluxo de controle,
+                    estrutura de repetições, orientação a objetos, JSON e API</p>
+            </div>
+
+            <div class="tecnologia__content--block">
+                <figure>
+                    <img src="./assets/img/technology/tec_react.png" alt="React icon">
+                    <figcaption>React</figcaption>
+                </figure>
+                <p>Após estudar sobre JS, resolvi me aprofundar na biblioteca React e venho estudando até hoje suas
+                    funcionalidades como: JSX, hooks, components, React Router e forms </p>
+            </div>
+
+            <div class="tecnologia__content--block">
+                <figure>
+                    <img src="./assets/img/technology/tec_nodejs.png" alt="Node icon">
+                    <figcaption>Node.js</figcaption>
+                </figure>
+                <p></p>
+            </div>
+
+            <div class="tecnologia__content--block">
+                <figure>
+                    <img src="./assets/img/technology/tec_angular.png" alt="Angular icon">
+                    <figcaption>Angular</figcaption>
+                </figure>
+                <p>Estudo e pratico Angular desde 2022 components, filter e pipes, property binding, diretivas, event
+                    binding.</p>
+            </div>
+
+            <div class="tecnologia__content--block">
+                <figure>
+                    <img src="./assets/img/technology/tec_java.png" alt="Java icon">
+                    <figcaption>Java</figcaption>
+                </figure>
+                <p></p>
+            </div>
+
+            <div class="tecnologia__content--block">
+                <figure>
+                    <img src="./assets/img/technology/tec_mysql.png" alt="MySQL icon">
+                    <figcaption>MySQL</figcaption>
+                </figure>
+                <p></p>
+            </div>
+
+            <div class="tecnologia__content--block">
+                <figure>
+                    <img src="./assets/img/technology/tec_jquery.png" alt="jQuery icon">
+                    <figcaption>jQuery</figcaption>
+                </figure>
+                <p></p>
+            </div>
+
+            <div class="tecnologia__content--block">
+                <figure>
+                    <img src="./assets/img/technology/tec_git.png" alt="Git icon">
+                    <figcaption>Git</figcaption>
+                </figure>
+                <p>Uso o git para alocar e controlar versões dos meus projetos no Github</p>
+            </div>
+
+            <div class="tecnologia__content--block">
+                <figure>
+                    <img src="./assets/img/technology/tec_ts.png" alt="TypeScript icon">
+                    <figcaption>TypeScript</figcaption>
+                </figure>
+                <p></p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="section__projetos max-width" id="projetos">
+        <h2>Projetos</h2>
+
+        <div class="projetos__content">
+
+            <div class="projetos__content--block">
+                <figure><img src="./assets/img/projects/proj_numberGenerator.png" alt="Number Generator project">
+                </figure>
+                <figcaption>
+                    <h3>Gerador de números</h3>
+                    <p>Fiz esse projeto com o intuito de praticar meus conhecimentos em <span
+                            class="span--js">JAVASCRIPT</span>. Nesse projeto fiz o
+                        uso da função Math.floor() juntamente do Math.random para gerar um número aleatório entre os
+                        informados pelo usuário. Além disso também utilizei <span class="span--html">HTML</span> e <span
+                            class="span--css">CSS</span>.</p>
+                </figcaption>
+                <nav>
+                    <a href="https://guigvd.github.io/number-generator/" target="_blank"><i
+                            class="fa-solid fa-link"></i> Deploy</a>
+                    <a href="https://github.com/guigvd/number-generator" target="_blank"><i
+                            class="fa-brands fa-github"></i> Code</a>
+                </nav>
+            </div>
+
+            <div class="projetos__content--block">
+                <figure><img src="./assets/img/projects/proj_clock.png" alt="Number Generator project">
+                </figure>
+                <figcaption>
+                    <h3>Gerador de números</h3>
+                    <p>Fiz esse projeto com o intuito de praticar meus conhecimentos em <span
+                            class="span--js">JAVASCRIPT</span>. Nesse projeto fiz uso do setInterval() junto com o
+                        Date() para pegar a hora do próprio sistema do usuário e ir atualizado na tela. Além disso
+                        também utilizei <span class="span--html">HTML</span> e <span class="span--css">CSS</span>.</p>
+                </figcaption>
+                <nav>
+                    <a href="https://guigvd.github.io/digital-clock/" target="_blank"><i class="fa-solid fa-link"></i>
+                        Deploy</a>
+                    <a href="https://github.com/guigvd/digital-clock" target="_blank"><i
+                            class="fa-brands fa-github"></i> Code</a>
+                </nav>
+            </div>
+
+            <div class="projetos__content--block">
+                <figure><img src="./assets/img/projects/proj_clock.png" alt="Number Generator project">
+                </figure>
+                <figcaption>
+                    <h3>Gerador de números</h3>
+                    <p>Fiz esse projeto com o intuito de praticar meus conhecimentos em <span
+                            class="span--js">JAVASCRIPT</span>. Nesse projeto fiz uso do setInterval() junto com o
+                        Date() para pegar a hora do próprio sistema do usuário e ir atualizado na tela. Além disso
+                        também utilizei <span class="span--html">HTML</span> e <span class="span--css">CSS</span>.</p>
+                </figcaption>
+                <nav>
+                    <a href="https://guigvd.github.io/digital-clock/" target="_blank">
+                        <i class="fa-solid fa-link"></i>
+                        Deploy
+                    </a>
+                    <a href="https://github.com/guigvd/digital-clock" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                        Code
+                    </a>
+                </nav>
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <section class="section__contatos" id="contato">
+
+        <div class="section__contatos--content max-width">
+
+            <div class="section__contatos--block">
+                <h2>Contatos</h2>
+                <a href="https://github.com/guigvd" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/guigvd/" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/guigvd/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/5521983583395" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="mailto:contatoguigvd@hotmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

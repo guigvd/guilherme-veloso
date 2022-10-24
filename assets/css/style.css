@@ -1,0 +1,460 @@
+/*Importando font*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap');
+
+/*Resetando css e alguns estilos globais*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.max-width{
+    max-width: 1440px;
+    width: 100%;
+    padding: 100px 10px 0px 10px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    background-color: #000;
+}
+
+section h2{
+    font-size: 34px;
+    text-align: center;
+    color: white;
+}
+
+/*Estilizando o Header*/
+.header-main{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 200;
+    width: 100%;
+    top: 0px;
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+}
+
+.header-main__content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 14px;
+}
+
+.header-main__content div{
+    display: flex;
+    gap: 20px;
+}
+
+.header-main__content img{
+    width: 40px;
+    border-radius: 50%;
+    display: none;
+    position: absolute;
+}
+
+.header-main a{
+    color: white;
+}
+
+.header-main a:hover{
+    color: #14A7B0;
+}
+
+.header-main h1{
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.header-main ul{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+
+    list-style: none;
+    font-size: 18px;
+}
+
+.header-main button{
+    display: none;
+    padding-right: 20px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.fa-bars{
+    font-size: 28px;
+}
+
+/*Header mobile menu*/
+.header-main--nav-mobile{
+    display: none;
+    background-color: rgba(0, 0, 0, .4);
+    position: fixed;
+    top: 60px;
+    right: 0;
+    width: 150px;
+    transition: 1s;
+}
+
+.header-main--nav-mobile li{
+    padding: 20px;
+    list-style: none;
+}
+
+.header-main--nav-mobile a{
+    color: white;
+}
+
+.header-main--nav-mobile a:hover{
+    color: #14A7B0;
+}
+
+.open{
+    display: block;
+}
+
+
+/*Estlizando section perfil*/
+.section__perfil{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+
+}
+
+.perfil-img{
+    width: 30%;
+}
+
+.perfil-img img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.perfil-text{
+    max-width: 50%;
+    width: 100%;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.perfil-text p{
+    text-align: left;
+    margin-top: 48px;
+    font-size: 20px;
+}
+
+.perfil-text span{
+    font-weight: bold;
+}
+
+.perfil-links{
+    padding-top: 80px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.perfil-links button{
+    margin: 10px;
+    outline: none;
+    background:transparent;
+    font-size: 18px;
+    font-weight: lighter;
+    border-radius: 5px;
+    padding: 6px 30px;
+    transition-duration: .6s;
+    cursor: pointer;
+    width: 120px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.link-curriculo{
+    border: 1px solid #E4405F;
+    color: #E4405F;
+}
+
+.link-curriculo:hover{
+    background-color: #E4405F;
+    color: white;
+}
+
+.link-github{
+    border: 1px solid white;
+    color: white;
+}
+
+.link-github:hover{
+    background-color: white;
+    color: black;
+}
+
+.link-linkedin{
+    border: 1px solid #378FE9;
+    color: #378FE9;
+}
+
+.link-linkedin:hover{
+    background-color: #378FE9;
+    color: white;
+}
+
+
+/*Estilizando section Tecnologias*/
+section{
+    padding-top: 60px;
+    margin: 0 auto;
+}
+
+.tecnologia__content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 60px;
+    gap: 10px;
+    color: white;
+}
+
+.tecnologia__content--block{
+    display: flex;
+    flex-direction: column;
+
+    max-width: calc(90% / 3);
+    min-width: 300px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+    background: transparent;
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, .1);
+    padding: 10px;
+    position: relative;
+    margin-top: 60px;
+}
+
+
+.tecnologia__content--block figure{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.tecnologia__content--block figcaption{
+    display: flex;
+    align-items: center;
+    
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.tecnologia__content--block img{
+    width: 30%;
+}
+
+.tecnologia__content--block p{
+    padding-top: 34px;
+    font-size: 18px;
+}
+
+/*Estlizando a section projetos*/
+.projetos__content{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 10px;
+    margin-bottom: 120px;
+}
+
+.projetos__content--block{
+    max-width: calc(90% /3);
+    min-width: 300px;
+    background-color: #343A40;
+    margin-top: 80px;
+}
+
+.projetos__content--block figcaption{
+    height: 280px;
+}
+
+.projetos__content--block h3{
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+}
+
+.projetos__content--block img{
+    width: 100%;
+}
+
+.projetos__content--block p{
+    line-height: 24px;
+    padding: 30px 30px 40px 30px;
+    color: white;
+}
+
+.projetos__content--block span{
+    padding: 2px 4px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.span--js{
+    background-color:#F7DF1E;
+    color: black;
+}
+
+.span--html{
+    background-color: #FF5722;
+    color: white;
+}
+
+.span--css{
+    background-color: #0074BF;
+    color: white;
+}
+
+.projetos__content--block nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #31373b;
+    padding: 16px;
+}
+
+.projetos__content--block a{
+    width: 120px;
+    height: 40px;
+    border-radius: 4px;
+    color: white;
+    transition: .4s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.projetos__content--block a:hover{
+    background-color: white;
+    color: black;
+}
+
+/*Estilizando a section contato*/
+.section__contatos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    height: 100vh;
+    background-image: url(../img/bg_contato.jpg);
+}
+
+.section__contatos--content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.section__contatos--block{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, .9);
+    box-shadow: 0px 0px 10px #000;
+    min-width: 400px;
+    width: 34%;
+    padding: 60px;
+    border-radius: 10px;
+}
+
+.section__contatos--block a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid white;
+    width: 100%;
+    font-size: 24px;
+    color: #fff;
+    padding: 10px 0;
+    border-radius: 4px;
+    transition: .4s;
+}
+
+.section__contatos--block a:hover{
+    background-color: white;
+    color: #000;
+}
+
+/*Responsivo*/
+@media only screen and (max-width: 1024px) {
+    .header-main__content img{
+        display: block;
+    }
+
+    .perfil-img{
+        display: none;
+    }
+
+    .perfil-text{
+        max-width: 80%;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .section__perfil{
+        justify-content: center;
+    }
+    
+    .tecnologia__content{
+        justify-content: space-around;
+    }
+
+    .header-main--nav{
+        display: none;
+    }
+
+    .header-main button{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 426px){
+    .section__contatos--block{
+        min-width: 320px;
+        padding: 60px 20px;
+    }
+
+    .header-main h1{
+        font-size: 20px;
+    }
+
+    .header-main__content img{
+        width: 34px;
+    }
+}
