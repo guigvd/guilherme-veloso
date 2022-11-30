@@ -66,10 +66,13 @@ section h2{
 
 .header-main a{
     color: white;
+    transition: .2s linear;
 }
 
 .header-main a:hover{
     color: #14A7B0;
+    border-bottom: 1px solid #14A7B0;
+    padding-bottom: .5rem;
 }
 
 .header-main h1{
@@ -117,10 +120,13 @@ section h2{
 
 .header-main--nav-mobile a{
     color: white;
+    transition: .2s linear;
 }
 
 .header-main--nav-mobile a:hover{
     color: #14A7B0;
+    border-bottom: 1px solid #14A7B0;
+    padding-bottom: .5rem;
 }
 
 .open{
@@ -241,7 +247,7 @@ section{
 .tecnologia__content--block{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
 
     max-width: calc(80% / 3);
     min-width: 300px;
@@ -271,6 +277,8 @@ section{
 
 .tecnologia__content--block img{
     width: 30%;
+    aspect-ratio: 2/2;
+    object-fit: contain;
 }
 
 .tecnologia__content--block p{
@@ -448,6 +456,7 @@ section{
     .header-main button{
         display: block;
     }
+
 }
 
 @media only screen and (max-width: 426px){
