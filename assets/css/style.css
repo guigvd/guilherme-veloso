@@ -25,10 +25,15 @@ body{
     background-color: #000;
 }
 
+section{
+    padding-top: 60px;
+    margin: 0 auto;
+}
+
 section h2{
     font-size: 34px;
     text-align: center;
-    color: white;
+    color: #fff;
 }
 
 .span--js{
@@ -38,43 +43,59 @@ section h2{
 
 .span--html{
     background-color: #FF5722;
-    color: white;
+    color: #fff;
 }
 
 .span--css{
     background-color: #0074BF;
-    color: white;
+    color: #fff;
 }
 
 .span--angular{
     background-color: #DD0031;
-    color: white;
+    color: #fff;
+}
+
+.span--react{
+    background-color: #00E0D6;
+    color: #000;
 }
 
 .span--typescript{
     background-color: #3178C6;
-    color: white;
+    color: #fff;
 }
 
 .span--angMaterial{
     background-color: #EE8500;
-    color: white;
+    color: #fff;
 }
 
 .span--fakeStore{
     background-color: #802C6E;
-    color: white;
+    color: #fff;
 }
 
 .span--stripe{
     background-color: #5E56F2;
-    color: white;
+    color: #fff;
 }
 
 .span--tailwind{
     background-color: #3D9EAC;
-    color: white;
+    color: #fff;
 }
+
+.span--geoDB{
+    background-color: #252162;
+    color: #fff;
+}
+
+.span--openWeather{
+    background-color: #EA6E4B;
+    color: #fff;
+}
+
 
 /*Estilizando o Header*/
 .header-main{
@@ -85,7 +106,7 @@ section h2{
     width: 100%;
     top: 0px;
     background-color: rgba(0, 0, 0, .4);
-    color: white;
+    color: #fff;
 }
 
 .header-main__content{
@@ -107,10 +128,11 @@ section h2{
     border-radius: 50%;
     display: none;
     position: absolute;
+    object-fit: contain;
 }
 
 .header-main a{
-    color: white;
+    color: #fff;
     transition: .2s linear;
 }
 
@@ -138,13 +160,14 @@ section h2{
     display: none;
     padding-right: 20px;
     background-color: transparent;
-    color: white;
+    color: #fff;
     border: none;
     outline: none;
 }
 
 .fa-bars{
-    font-size: 28px;
+    font-size: 22px;
+    cursor: pointer;
 }
 
 /*Header mobile menu*/
@@ -164,7 +187,7 @@ section h2{
 }
 
 .header-main--nav-mobile a{
-    color: white;
+    color: #fff;
     transition: .2s linear;
 }
 
@@ -184,7 +207,7 @@ section h2{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    color: white;
+    color: #fff;
 
 }
 
@@ -249,16 +272,16 @@ section h2{
 
 .link-curriculo:hover{
     background-color: #E4405F;
-    color: white;
+    color: #fff;
 }
 
 .link-github{
-    border: 1px solid white;
-    color: white;
+    border: 1px solid #fff;
+    color: #fff;
 }
 
 .link-github:hover{
-    background-color: white;
+    background-color: #fff;
     color: black;
 }
 
@@ -269,16 +292,11 @@ section h2{
 
 .link-linkedin:hover{
     background-color: #378FE9;
-    color: white;
+    color: #fff;
 }
 
 
 /*Estilizando section Tecnologias*/
-section{
-    padding-top: 60px;
-    margin: 0 auto;
-}
-
 .tecnologia__content{
     display: flex;
     flex-direction: row;
@@ -286,7 +304,7 @@ section{
     justify-content: space-around;
     padding-top: 60px;
     gap: 10px;
-    color: white;
+    color: #fff;
 }
 
 .tecnologia__content--block{
@@ -361,19 +379,19 @@ section{
 .projetos__content--block h3{
     text-align: center;
     padding-top: 20px;
-    color: white;
+    color: #fff;
     font-size: 24px;
 }
 
 .projetos__content--block img{
     width: 100%;
-    aspect-ratio: 3/2;
+    object-fit: contain;
 }
 
 .projetos__content--block p{
     line-height: 24px;
     padding: 30px 30px 40px 30px;
-    color: white;
+    color: #fff;
 }
 
 .projetos__content--block span{
@@ -395,7 +413,7 @@ section{
     width: 120px;
     height: 40px;
     border-radius: 4px;
-    color: white;
+    color: #fff;
     transition: .4s;
 
     display: flex;
@@ -405,7 +423,7 @@ section{
 }
 
 .projetos__content--block a:hover{
-    background-color: white;
+    background-color: #fff;
     color: black;
 }
 
@@ -443,7 +461,7 @@ section{
     justify-content: center;
     align-items: center;
 
-    border: 1px solid white;
+    border: 1px solid #fff;
     width: 100%;
     font-size: 24px;
     color: #fff;
@@ -453,7 +471,7 @@ section{
 }
 
 .section__contatos--block a:hover{
-    background-color: white;
+    background-color: #fff;
     color: #000;
 }
 
