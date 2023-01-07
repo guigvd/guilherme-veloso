@@ -66,8 +66,38 @@ section h2{
     color: #fff;
 }
 
+.span--express{
+    background-color: #000;
+    color: #fff;
+}
+
+.span--mongodb{
+    background-color: #006346;
+    color: #fff;
+}
+
+.span--node{
+    background-color: #57A745;
+    color: #fff;
+}
+
+.span--vite{
+    background-color: #8E5AEB;
+    color: #fff;
+}
+
 .span--angMaterial{
     background-color: #EE8500;
+    color: #fff;
+}
+
+.span--redux{
+    background-color: #7046B2;
+    color: #fff;
+}
+
+.span--materialUI{
+    background-color: #0079F2;
     color: #fff;
 }
 
